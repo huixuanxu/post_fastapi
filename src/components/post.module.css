@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: row; /* 橫向排列 */
+    align-items: stretch; /* 讓左右兩邊撐滿 */
+    justify-content: center; /* 置中整個內容 */
+}
+.articlePart{
+    width: 70%;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column ;
+    background-color: rgb(241, 241, 241);
+}
+.commentsPart{
+    width: 30%;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column ;
+    background-color: rgb(199, 199, 199);
+}
+.textArea{
+    width: 100%;
+    height: 95%;
+    padding: 5px;
+    color:black;
+    /* background-color: rgb(126, 173, 173); */
+}
+.buttonArea{
+    width: 100%;
+    height: 50px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(103, 103, 171); */
+
+}
