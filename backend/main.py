@@ -49,7 +49,8 @@ app = FastAPI(title="Blog Post API")
 # --- 4. 配置 CORS (跨域資源共享) ---
 # 這是讓您的 React 應用程式可以呼叫這個本地後端伺服器的關鍵
 origins = [
-    "*", # 開發環境中允許所有來源 (正式環境應鎖定)
+    # Vercel 前端網址
+    "https://final-project-frontend-eta.vercel.app", 
     "http://localhost",
     "http://localhost:3000", 
 ]
