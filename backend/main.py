@@ -47,13 +47,18 @@ DB: Dict[int, PostData] = {
 app = FastAPI(title="Blog Post API")
 
 # --- 4. 配置 CORS (跨域資源共享) ---
-# **【安全性修正】** 將 ["*"] 替換為您的 Vercel 實際網址
-# 請將下面的 placeholder 替換為您 Vercel 網站的 URL，例如：https://your-vercel-app.vercel.app
-Vercel_Frontend_URL = "https://post-fastapi-git-main-huixuanxus-projects.vercel.app/" 
+# 1. Vercel 官方產生的主要網址 (這是瀏覽器發出請求的網址)
+Vercel_Official_URL = "https://post-fastapi-frontend.vercel.app" 
+
+# 2. Vercel 的專案網址或分支網址 (保留以防萬一)
+Vercel_Preview_URL = "https://post-fastapi-git-main-huixuanxus-projects.vercel.app" 
+# 注意：為了相容性，我們移除了網址末尾的 "/"
+
 origins = [
-    Vercel_Frontend_URL,
-    "http://localhost:3000" # 本地開發用的網址
-] 
+    Vercel_Official_URL,
+    Vercel_Preview_URL,
+    "http://localhost:3000", # 本地開發用的網址
+]
 
   
 
