@@ -55,9 +55,10 @@ Vercel_Preview_URL = "https://post-fastapi-git-main-huixuanxus-projects.vercel.a
 # 注意：為了相容性，我們移除了網址末尾的 "/"
 
 origins = [
-    Vercel_Official_URL,
-    Vercel_Preview_URL,
-    "http://localhost:3000", # 本地開發用的網址
+    "https://post-fastapi.vercel.app",  # ✅ 你實際的 Vercel 前端網址
+    "https://post-fastapi-w76x.onrender.com",  # ✅ 後端自己（容許自我連線）
+    "https://post-fastapi-git-main-huixuanxus-projects.vercel.app",  # 預覽網址
+    "http://localhost:3000",  # 本地測試用
 ]
 
   
