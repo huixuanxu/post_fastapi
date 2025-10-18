@@ -2,7 +2,8 @@ import React, { useState, useEffect, useCallback } from 'react'; // 移除 useMe
 import { HeartFilled, MessageOutlined, SendOutlined } from '@ant-design/icons';
 
 // --- FastAPI API Configuration ---
-const API_BASE_URL = 'https://post-fastapi-w76x.onrender.com';
+const API_BASE_URL = "https://post-fastapi-w76x.onrender.com"; 
+
 const POST_ID = 1; // 始終針對 ID 為 1 的貼文進行操作
 
 // 這是用於顯示個別留言的組件
