@@ -47,15 +47,13 @@ DB: Dict[int, PostData] = {
 app = FastAPI(title="Blog Post API")
 
 # --- 4. 配置 CORS (跨域資源共享) ---
-# 這是讓您的 React 應用程式可以呼叫這個本地後端伺服器的關鍵
-origins = ["*"]
-  #   # 您的 Vercel 前端網址 (MUST BE HTTPS)
-    # "https://final-project-frontend-eta.vercel.app", 
-    
-    # # 您的 Render API 網址 (雖然不必要，但保留以防萬一)
-    # "https://post-fastapi-w76x.onrender.com",
-    # # 本地開發環境
-    # "http://localhost:3000", 
+# **【安全性修正】** 將 ["*"] 替換為您的 Vercel 實際網址
+# 請將下面的 placeholder 替換為您 Vercel 網站的 URL，例如：https://your-vercel-app.vercel.app
+Vercel_Frontend_URL = "https://post-fastapi-git-main-huixuanxus-projects.vercel.app/" 
+origins = [
+    Vercel_Frontend_URL,
+    "http://localhost:3000" # 本地開發用的網址
+] 
 
   
 
